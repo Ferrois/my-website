@@ -1,0 +1,64 @@
+
+.homeContainer{
+    /* display: flex;
+    flex-direction: column; */
+    width:100vw;
+    height:auto;
+}
+
+.mainImage{
+    display: flex;
+    width:100vw;
+    max-height: 70vh;
+    background-color: transparent;
+}
+
+.mainImage > img {
+    width:100%;
+    height:70vh;
+    object-fit: cover;
+    position: absolute;
+
+}
+
+.mainTextContainer{
+    display:flex;
+    justify-content: space-between;
+    background-color: transparent;
+    position: absolute;
+    width:100%;
+    height:70%;
+    align-items: center;
+}
+
+.leftQuote{
+    display:flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    position:absolute;
+    color:rgb(255, 255, 255);
+    font-family: "Roboto Mono", sans-serif;
+    border-radius: 10px;
+    margin:10px;
+    
+}
+
+.leftQuoteText{
+    margin:8px;
+    font-size: 2.5em;
+    animation:forwards textFade 3s;
+    color: transparent;
+    user-select: none;
+}
+
+.contentContainer{
+    background-color: rgb(30,30,30);
+    position: relative;
+    height:150vh;
+    width:100%;
+    z-index: -1;
+}
+
+@keyframes textFade {
+    from {transform:translateY(30px);color: transparent;}
+    to {transform:translateY(0px);color: white;}
+}

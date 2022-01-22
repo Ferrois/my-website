@@ -19,7 +19,7 @@
 
 .mainImage > img {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
@@ -113,9 +113,6 @@
 @media screen and (max-width: 610px) {
   .leftQuoteText {
     font-size: 1.5em;
-  }
-  .mainImage > img {
-    height: 40vh;
   }
   .mainImage {
     height: 40vh;

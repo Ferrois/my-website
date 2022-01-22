@@ -5,7 +5,7 @@ $imageHeight:calc(70vh - 70px);
     display: flex;
     flex-direction: column;
     width:100vw;
-    height:300vh;
+    height:auto;
 }
 
 .mainImage{
@@ -17,12 +17,11 @@ $imageHeight:calc(70vh - 70px);
 
 .mainImage > img {
     width:100%;
-    height: 90vh;
+    height: 100vh;
     object-fit: cover;
     position: absolute;
     z-index: -1;
     top:0px;
-
 }
 
 .mainTextContainer{
@@ -73,9 +72,6 @@ $imageHeight:calc(70vh - 70px);
 @media screen and (max-width:610px) {
     .leftQuoteText{
         font-size :1.5em;
-    }
-    .mainImage > img {
-        height: 40vh;
     }
     .mainImage{
         height:40vh;

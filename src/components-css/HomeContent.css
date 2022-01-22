@@ -1,3 +1,9 @@
+.contentWrapper1 {
+  width: 100%;
+  height: 200px;
+  background-color: transparent;
+}
+
 .contentWrapper {
   width: 100%;
   max-width: 1000px;
@@ -6,34 +12,47 @@
 .contentHeader {
   color: white;
   font-family: "Roboto Mono" , sans-serif;
-  width: auto;
+  width: 0px;
   display: inline-block;
   position: relative;
   height: auto;
-  margin: 20px;
+  margin: 5px;
+  padding: 10px;
+  font-size: 1.5em;
 }
 
 .contentHeader::after {
-  content: "";
   display: block;
   position: absolute;
-  height: 50%;
+  height: 40%;
   width: 3px;
-  top: 25%;
-  right: 0;
-  background-color: #c5c5c5;
-  -webkit-animation: blinkCursor 0.8s forwards;
-          animation: blinkCursor 0.8s forwards;
-  -webkit-animation-iteration-count: 5;
-          animation-iteration-count: 5;
+  top: 30%;
+  right: 15px;
+  background-color: transparent;
 }
 
 .contentHeader h2 {
   color: white;
   position: relative;
-  -webkit-animation: textTyping 1s forwards steps(12);
-          animation: textTyping 1s forwards steps(12);
   overflow: hidden;
+}
+
+.contentHeaderShow {
+  width: auto;
+}
+
+.contentHeaderShow::after {
+  -webkit-animation: blinkCursor 0.8s forwards;
+          animation: blinkCursor 0.8s forwards;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+  content: "";
+  background-color: #c8c8c8;
+}
+
+.contentHeaderShow h2 {
+  -webkit-animation: textTyping 1.3s forwards steps(12);
+          animation: textTyping 1.3s forwards steps(12);
 }
 
 @-webkit-keyframes blinkCursor {
@@ -84,5 +103,30 @@
     border-radius: 5px;
     padding: 10px;
   }
+}
+
+.content1 {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contentText {
+  color: white;
+  font-size: 2em;
+  display: inline-block;
+  margin: 1px 0px 1px 5px;
+}
+
+.Typewriter {
+  display: inline-block;
+  color: #0086f3;
 }
 /*# sourceMappingURL=HomeContent.css.map */

@@ -1,64 +1,126 @@
-
-.homeContainer{
-    /* display: flex;
-    flex-direction: column; */
-    width:100vw;
-    height:auto;
+.homeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 300vh;
 }
 
-.mainImage{
-    display: flex;
-    width:100vw;
-    max-height: 70vh;
-    background-color: transparent;
+.mainImage {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  background-color: transparent;
 }
 
 .mainImage > img {
-    width:100%;
-    height:70vh;
-    object-fit: cover;
-    position: absolute;
-
+  width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: -1;
 }
 
-.mainTextContainer{
-    display:flex;
-    justify-content: space-between;
-    background-color: transparent;
-    position: absolute;
-    width:100%;
-    height:70%;
-    align-items: center;
+.mainTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.leftQuote{
-    display:flex;
-    background-color: rgba(0, 0, 0, 0.4);
-    position:absolute;
-    color:rgb(255, 255, 255);
-    font-family: "Roboto Mono", sans-serif;
-    border-radius: 10px;
-    margin:10px;
-    
+.leftQuote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  color: white;
+  font-family: "Roboto Mono", sans-serif;
+  border-radius: 10px;
+  margin: 20px;
+  z-index: -1;
 }
 
-.leftQuoteText{
-    margin:8px;
-    font-size: 2.5em;
-    animation:forwards textFade 3s;
+.leftQuoteText {
+  margin: 8px;
+  font-size: 2.5em;
+  -webkit-animation: forwards textFade 3s;
+          animation: forwards textFade 3s;
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.contentContainer {
+  background-color: #1e1e1e;
+  height: 150vh;
+  width: 100%;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@-webkit-keyframes textFade {
+  from {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
     color: transparent;
-    user-select: none;
-}
-
-.contentContainer{
-    background-color: rgb(30,30,30);
-    position: relative;
-    height:150vh;
-    width:100%;
-    z-index: -1;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    color: white;
+  }
 }
 
 @keyframes textFade {
-    from {transform:translateY(30px);color: transparent;}
-    to {transform:translateY(0px);color: white;}
+  from {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    color: transparent;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    color: white;
+  }
 }
+
+@media screen and (max-width: 610px) {
+  .leftQuoteText {
+    font-size: 1.5em;
+  }
+  .mainImage > img {
+    height: 40vh;
+  }
+  .mainImage {
+    height: 40vh;
+  }
+  .mainTextContainer {
+    height: 40vh;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

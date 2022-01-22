@@ -22,7 +22,7 @@ class Name extends React.Component{
     }
 
     render(){
-        return (<span style={{'user-select': 'none'}}>
+        return (<span style={{'userSelect': 'none'}}>
             <span> </span>
             <span>'</span>
             <span style={{'color' : this.state.effectIndex === 0 ? this.state.color : "white"}}>f</span>

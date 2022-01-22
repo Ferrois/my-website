@@ -1,0 +1,65 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentWrapper{
+    width:100%;
+    max-width: 1000px;
+}
+
+.contentHeader{
+    color:white;
+    font-family: "Roboto Mono" , sans-serif;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    height: auto;
+    margin: 20px;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        height:50%;
+        width: 3px;
+        top:25%;
+        right:0;
+        background-color: rgb(197, 197, 197);
+        animation: blinkCursor 0.8s forwards;
+        animation-iteration-count: 5;
+    }
+
+    h2{
+        color: white;
+        position: relative;
+        animation: textTyping 1s forwards steps(12);
+        overflow:hidden ;
+    }
+}
+
+@keyframes blinkCursor {
+    0%,75%{
+        opacity:1;
+    }
+    76%,100%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes textTyping {
+    0%{
+        width:0px;
+        background-color: transparent;
+    }
+    70%{
+        width:172.83px;
+        background-color: transparent;
+    }
+    100%{
+        background-color: rgba(0, 0, 0, 0.253);
+        border-radius: 5px;
+        padding: 10px;
+    }
+}

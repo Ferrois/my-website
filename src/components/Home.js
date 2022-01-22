@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import "../components-css/Home.css"
 import Quote from './Quote';
+import HomeContent from './HomeContent';
 
 
 export default class Home extends Component {
@@ -18,7 +19,7 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <div className='contentContainer'>
-                    lorem
+                    <HomeContent />
                 </div>
             </div>
         )

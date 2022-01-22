@@ -32,7 +32,7 @@
         height:40%;
         width: 3px;
         top:30%;
-        right:15px;
+        right:10px;
         background-color: transparent;
         
     }
@@ -45,16 +45,17 @@
 }
 
 .contentHeaderShow{
+    letter-spacing: 4px;
     width:auto;
     &::after{
-        animation: blinkCursor 0.8s forwards;
-        animation-iteration-count: 5;
+        animation: blinkCursor 0.8s forwards steps(3);
+        animation-iteration-count: 7;
         content:"";
         background-color: rgb(200, 200, 200);
     }
 
     h2{
-        animation: textTyping 1.3s forwards steps(12);
+        animation: textTyping 2s forwards steps(15);
     }
 }
 
@@ -72,10 +73,12 @@
     0%{
         width:0px;
         background-color: transparent;
+        padding: 10px;
     }
     70%{
-        width:172.83px;
+        width:335px;
         background-color: transparent;
+        padding: 10px;
     }
     100%{
         background-color: rgba(0, 0, 0, 0.253);

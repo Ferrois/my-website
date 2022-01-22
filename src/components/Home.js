@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import "../components-css/Home.css"
 import Quote from './Quote';
 import HomeContent from './HomeContent';
@@ -10,7 +10,7 @@ export default class Home extends Component {
         return(
             <div className='homeContainer'>
                 <div className='mainImage'>
-                    <img src='images/nightscene.jpg'></img>
+                    <HomeImage />
                     <div className="mainTextContainer">
                         <div className='leftQuote'>
                             <Quote/>
@@ -25,3 +25,25 @@ export default class Home extends Component {
         )
     }
 }
+
+//Parallax effect
+
+const HomeImage = () => {
+    const [offsetY, setOffsetY] = useState(0);
+    const handleScroll = () => {
+      setOffsetY(window.pageYOffset);
+    }
+  
+    useEffect(() => {
+      window.addEventListener("scroll",handleScroll);
+    
+      return () => {
+        window.removeEventListener("scroll",handleScroll);
+      };
+    }, []);
+    
+  
+    return <img src='images/nightscene.jpg' className='mainImage' style={{
+      "transform": `translateY(${offsetY * 0.5 - 70}px)`
+    }}></img>
+  };

@@ -19,11 +19,12 @@
 
 .mainImage > img {
   width: 100%;
-  height: calc(70vh - 70px);
+  height: 90vh;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
   z-index: -1;
+  top: 0px;
 }
 
 .mainTextContainer {

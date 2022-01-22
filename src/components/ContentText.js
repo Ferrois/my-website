@@ -1,12 +1,10 @@
 import React from 'react';
-import { useEffect } from 'react';
 import Aos from 'aos';
-import "../components-css/HomeContent.css"
-import { AOS } from 'aos';
+import "../components-css/HomeContent.css";
 import 'aos/dist/aos.css';
 import Typewriter from "typewriter-effect";
 
-class ContentText extends React.Component{
+export class ContentText1 extends React.Component{
     constructor(props) {
         super(props);
         Aos.init();
@@ -43,4 +41,13 @@ class ContentText extends React.Component{
     }
 };
 
-export default ContentText;
+
+export class ContentText2 extends React.Component {
+    render() {
+        return (
+            <div>
+                <div data-aos="fade-left" className='contentText'>Based in <span style={{"color" : "red","fontWeight":"bold"}}>Singapore</span>,<br/>Proud to be a <span style={{"color" : "red","fontWeight":"bold"}}>Singaporean</span>.</div>
+            </div>
+        )
+    }
+}

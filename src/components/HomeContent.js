@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "../components-css/HomeContent.css"
-import ContentText from './ContentText';
+import { ContentText1, ContentText2 } from './ContentText';
 
 export default class HomeContent extends Component {
 
@@ -26,7 +26,13 @@ export default class HomeContent extends Component {
                 <h2>ferrois.is()</h2>
             </div>
             <div className='content1'>
-              <ContentText/>
+              <ContentText1/>
+            </div>
+            <div className='contentHeader'>
+                <h2>ferrois.from()</h2>
+            </div>
+            <div className='content1'>
+                <ContentText2/>
             </div>
         </div>
     )

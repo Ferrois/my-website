@@ -17,10 +17,11 @@ $imageHeight:calc(70vh - 70px);
 
 .mainImage > img {
     width:100%;
-    height: $imageHeight;
+    height: 90vh;
     object-fit: cover;
     position: absolute;
     z-index: -1;
+    top:0px;
 
 }
 

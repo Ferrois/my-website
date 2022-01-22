@@ -44,6 +44,6 @@ const HomeImage = () => {
     
   
     return <img src='images/nightscene.jpg' className='mainImage' style={{
-      "transform": `translateY(${offsetY * 0.5 - 70}px)`
+      "transform": `translateY(${offsetY * 0.5}px)`
     }}></img>
   };

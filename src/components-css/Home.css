@@ -24,7 +24,7 @@
      object-fit: cover;
   position: absolute;
   z-index: -1;
-  top: 0px;
+  top: -70px;
 }
 
 .mainTextContainer {
@@ -70,7 +70,7 @@
 
 .contentContainer {
   background-color: #1e1e1e;
-  height: 150vh;
+  height: 250vh;
   width: 100%;
   z-index: -1;
   display: -webkit-box;

@@ -223,4 +223,10 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 380px) {
+  .headerOwner {
+    display: none;
+  }
+}
 /*# sourceMappingURL=Header.css.map */

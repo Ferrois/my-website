@@ -46,7 +46,7 @@ export class ContentText2 extends React.Component {
     render() {
         return (
             <div>
-                <div data-aos="fade-left" className='contentText'>Based in <span style={{"color" : "red","fontWeight":"bold"}}>Singapore</span>,<br/>Proud to be a <span style={{"color" : "red","fontWeight":"bold"}}>Singaporean</span>.</div>
+                <div data-aos="fade-right" className='contentText'>Based in <span style={{"color" : "red","fontWeight":"bold"}}>Singapore</span>,<br/>Proud to be a <span style={{"color" : "red","fontWeight":"bold"}}>Singaporean</span>.</div>
             </div>
         )
     }

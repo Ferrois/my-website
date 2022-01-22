@@ -21,7 +21,7 @@ $imageHeight:calc(70vh - 70px);
     object-fit: cover;
     position: absolute;
     z-index: -1;
-    top:0px;
+    top:-70px;
 }
 
 .mainTextContainer{
@@ -56,7 +56,7 @@ $imageHeight:calc(70vh - 70px);
 
 .contentContainer{
     background-color: rgb(30,30,30);
-    height:150vh;
+    height:250vh;
     width:100%;
     z-index: -1;
     display:flex;

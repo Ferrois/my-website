@@ -14,7 +14,7 @@ export default class Header extends Component {
       <div className='headerContainer'>
         <div className='headerWrapper'>
             <div className='headerLeft'>
-                .owner() =
+                <span className='headerOwner'>.owner() =</span>
                 <Name/>
             </div>
             <div className='headerRight'>

@@ -13,8 +13,8 @@ export default class Footer extends Component {
                     <div className='footerSiteMap'>
                         <p>Site Map</p>
                         <Link to={"/"} className='footerLink'>.home()</Link>
-                        <Link to={"/"} className='footerLink'>.home()</Link>
-                        <Link to={"/"} className='footerLink'>.home()</Link>
+                        <Link to={"/about"} className='footerLink'>.about()</Link>
+                        <Link to={"/contact"} className='footerLink'>.contact()</Link>
                     </div>
                 </div>
             </div>

@@ -43,8 +43,14 @@
 }
 
 .footerSiteMap .footerLink {
-  color: #004985;
+  color: #2e7dbe;
   text-decoration: none;
+  font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
+}
+
+.footerSiteMap .footerLink:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .footerHeading {

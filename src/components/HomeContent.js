@@ -34,6 +34,9 @@ export default class HomeContent extends Component {
             <div className='content1'>
                 <ContentText2/>
             </div>
+            <div className='contentHeader'>
+                <h2>ferrois.fun()</h2>
+            </div>
         </div>
     )
   }

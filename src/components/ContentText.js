@@ -28,6 +28,9 @@ export class ContentText1 extends React.Component{
                         .typeString("Full Stack Dev")
                         .pauseFor(1000)
                         .deleteAll()
+                        .typeString("Opthalmologist")
+                        .pauseFor(1000)
+                        .deleteAll()
                         .start(typewriter);
                     }} options={{
                         loop:true

@@ -1,0 +1,58 @@
+.aboutPage {
+  width: 100%;
+  height: 200vh;
+  background-color: #1e1e1e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutSkillWrapper {
+  width: 97%;
+  max-width: 1000px;
+  height: auto;
+  border: 5px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skillCard {
+  height: auto;
+  min-height: 170px;
+  width: 275px;
+  background-color: rgba(51, 51, 51, 0.5);
+  border-radius: 20px;
+  color: lightgray;
+  margin: 5px;
+  -webkit-box-shadow: black 3px 3px 1px;
+          box-shadow: black 3px 3px 1px;
+}
+
+.skillCard h2 {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 2em;
+}
+
+.skillCard p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+}
+/*# sourceMappingURL=About.css.map */
